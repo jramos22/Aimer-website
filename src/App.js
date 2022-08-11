@@ -1,6 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ChakraProvider } from '@chakra-ui/react';
 import { theme } from './theme/index';
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { getAll } from './services/getApi';
+import { intialState } from './actions';
+
 //Components
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -14,6 +19,15 @@ import News from './pages/News';
 import Shop from './pages/Shop';
 
 function App() {
+	const dispatch = useDispatch();
+	const state = useSelector((state) => state);
+	console.log(state);
+	useEffect(() => {
+		getAll().then((data) => {
+			dispatch(intialState(data));
+		});
+	}, []);
+
 	return (
 		<ChakraProvider theme={theme}>
 			<Router>
