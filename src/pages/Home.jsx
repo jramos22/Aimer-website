@@ -1,10 +1,10 @@
 import React from 'react';
-
+import Musicplayer from '../components/MusicPlayer';
 export default function Home() {
 	return (
 		<>
 			<div>
-				<h1>Home</h1>
+				<Musicplayer />
 			</div>
 		</>
 	);
