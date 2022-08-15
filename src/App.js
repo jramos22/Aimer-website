@@ -1,11 +1,15 @@
+//react
+import { useEffect } from 'react';
+//react router
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+//Chakra UI
 import { ChakraProvider } from '@chakra-ui/react';
 import { theme } from './theme/index';
-import { useDispatch, useSelector } from 'react-redux';
-import { useEffect } from 'react';
+//react-redux
+import { useDispatch } from 'react-redux';
+//services
 import { getAll } from './services/getApi';
 import { intialState } from './actions';
-
 //Components
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -19,9 +23,9 @@ import News from './pages/News';
 import Shop from './pages/Shop';
 
 function App() {
+	//dispatch intial state
 	const dispatch = useDispatch();
-	const state = useSelector((state) => state);
-	console.log(state);
+	//call Api and set the initial state
 	useEffect(() => {
 		getAll().then((data) => {
 			dispatch(intialState(data));

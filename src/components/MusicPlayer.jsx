@@ -1,11 +1,15 @@
-import { Box } from '@chakra-ui/react';
+//react
 import React from 'react';
+//chakra UI
+import { Box } from '@chakra-ui/react';
+//components
+import Carrouseel from './Carrouseel';
 
 const Musicplayer = () => {
 	return (
-		<>
-			<Box>HI</Box>
-		</>
+		<Box>
+			<Carrouseel />
+		</Box>
 	);
 };
 export default Musicplayer;

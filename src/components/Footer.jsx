@@ -1,3 +1,6 @@
+//react
+import React from 'react';
+//chakra UI
 import {
 	Box,
 	Flex,
@@ -6,8 +9,7 @@ import {
 	UnorderedList,
 	Text,
 } from '@chakra-ui/react';
-import React from 'react';
-
+//Images
 import twitter from '../img/twitter.png';
 import youtube from '../img/youtube.png';
 import line from '../img/line.png';
@@ -35,16 +37,40 @@ export default function Footer() {
 					justifyContent="space-between"
 				>
 					<ListItem mr={4} ml={4}>
-						<Image src={twitter} alt="twitter" />
+						<a
+							href="https://twitter.com/Aimer_and_staff"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<Image src={twitter} alt="twitter" />
+						</a>
 					</ListItem>
 					<ListItem mr={4} ml={4}>
-						<Image src={youtube} alt="youtube" />
+						<a
+							href="https://www.youtube.com/user/aimerSMEJ"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<Image src={youtube} alt="youtube" />
+						</a>
 					</ListItem>
 					<ListItem mr={4} ml={4}>
-						<Image src={line} alt="line" />
+						<a
+							href="https://line.me/ti/p/%40aimer"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<Image src={line} alt="line" />
+						</a>
 					</ListItem>
 					<ListItem mr={4} ml={4}>
-						<Image src={weibo} alt="wiebo" />
+						<a
+							href="https://weibo.com/u/7704697388"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<Image src={weibo} alt="wiebo" />
+						</a>
 					</ListItem>
 				</UnorderedList>
 			</Box>

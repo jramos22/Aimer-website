@@ -1,5 +1,8 @@
+//react
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+//react-router
+import { NavLink, Link } from 'react-router-dom';
+//chakra UI/icons
 import {
 	Flex,
 	Spacer,
@@ -15,9 +18,8 @@ import {
 	UnorderedList,
 	ListItem,
 } from '@chakra-ui/react';
-
 import { HamburgerIcon } from '@chakra-ui/icons';
-
+//Images
 import logo from '../img/aimer-logo.png';
 import twitter from '../img/twitter.png';
 import youtube from '../img/youtube.png';
@@ -25,8 +27,10 @@ import line from '../img/line.png';
 import weibo from '../img/weibo.png';
 
 export default function Header() {
+	//control the drawer in mobile
 	const { isOpen, onOpen, onClose } = useDisclosure();
 	const btnRef = React.useRef();
+	//control if is active in Descktop
 	let activeStyle = {
 		textDecoration: 'underline',
 	};
@@ -43,13 +47,16 @@ export default function Header() {
 				display="flex"
 				justifyContent={{ lg: 'center' }}
 			>
-				<Image
-					src={logo}
-					w={{ base: '115px', lg: '263px' }}
-					h={{ base: '45px', lg: '103px' }}
-					mt={{ lg: 6 }}
-					ml={{ base: 4, lg: 0 }}
-				/>
+				<Link to="/home">
+					<Image
+						src={logo}
+						w={{ base: '115px', lg: '263px' }}
+						h={{ base: '45px', lg: '103px' }}
+						mt={{ lg: 6 }}
+						ml={{ base: 4, lg: 0 }}
+						alt="logo"
+					/>
+				</Link>
 				<UnorderedList
 					color="brand.White"
 					display={{ base: 'none', lg: 'flex' }}
@@ -59,16 +66,40 @@ export default function Header() {
 					listStyleType="none"
 				>
 					<ListItem mr={4}>
-						<Image src={twitter} alt="twitter" />
+						<a
+							href="https://twitter.com/Aimer_and_staff"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<Image src={twitter} alt="twitter" />
+						</a>
 					</ListItem>
 					<ListItem mr={4}>
-						<Image src={youtube} alt="youtube" />
+						<a
+							href="https://www.youtube.com/user/aimerSMEJ"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<Image src={youtube} alt="youtube" />
+						</a>
 					</ListItem>
 					<ListItem mr={4}>
-						<Image src={line} alt="line" />
+						<a
+							href="https://line.me/ti/p/%40aimer"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<Image src={line} alt="line" />
+						</a>
 					</ListItem>
 					<ListItem mr={4}>
-						<Image src={weibo} alt="wiebo" />
+						<a
+							href="https://weibo.com/u/7704697388"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<Image src={weibo} alt="wiebo" />
+						</a>
 					</ListItem>
 				</UnorderedList>
 			</Box>
@@ -284,16 +315,40 @@ export default function Header() {
 							justifyContent="space-between"
 						>
 							<ListItem mr={4}>
-								<Image src={twitter} alt="twitter" />
+								<a
+									href="https://twitter.com/Aimer_and_staff"
+									target="_blank"
+									rel="noreferrer"
+								>
+									<Image src={twitter} alt="twitter" />
+								</a>
 							</ListItem>
 							<ListItem mr={4}>
-								<Image src={youtube} alt="youtube" />
+								<a
+									href="https://www.youtube.com/user/aimerSMEJ"
+									target="_blank"
+									rel="noreferrer"
+								>
+									<Image src={youtube} alt="youtube" />
+								</a>
 							</ListItem>
 							<ListItem mr={4}>
-								<Image src={line} alt="line" />
+								<a
+									href="https://line.me/ti/p/%40aimer"
+									target="_blank"
+									rel="noreferrer"
+								>
+									<Image src={line} alt="line" />
+								</a>
 							</ListItem>
 							<ListItem mr={4}>
-								<Image src={weibo} alt="wiebo" />
+								<a
+									href="https://weibo.com/u/7704697388"
+									target="_blank"
+									rel="noreferrer"
+								>
+									<Image src={weibo} alt="wiebo" />
+								</a>
 							</ListItem>
 						</UnorderedList>
 					</DrawerBody>
