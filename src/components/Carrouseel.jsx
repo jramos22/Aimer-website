@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 //components
 import CardCarrousel from './CardCarrousel';
-import MusicPlayerControlles from './PlayerControlles';
+import MusicPlayerControlles from './PlayerControl';
 import CarrouseelContainer from './CarrouseelContainer';
 //chakra UI
 import { Box } from '@chakra-ui/react';
@@ -102,7 +102,6 @@ export default function Carrouseel() {
 						boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
 						backdropFilter: 'blur(3.2px)',
 						WebkitBackdropFilter: 'blur(3.2px)',
-						border: '1px solid rgba(255, 255, 255, 0.44)',
 					}}
 				>
 					<Box
