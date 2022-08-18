@@ -2,6 +2,7 @@
 import React from 'react';
 //chakra UI
 import { Box, Image, Text, Link } from '@chakra-ui/react';
+import { ExternalLinkIcon } from '@chakra-ui/icons';
 //redux
 import { useSelector } from 'react-redux';
 
@@ -65,10 +66,10 @@ export default function HomeCards() {
 								<Box mt={4} textAlign="end" width="100%">
 									<Link
 										href={element.link}
-										textDecor="underline"
 										fontSize={{ lg: '1.25rem' }}
 									>
 										Watch Video
+										<ExternalLinkIcon mx="2px" />
 									</Link>
 								</Box>
 							</Box>
@@ -109,11 +110,9 @@ export default function HomeCards() {
 									textAlign={{ base: 'end', '1md': 'start' }}
 									width="100%"
 								>
-									<Link
-										href={element.link}
-										textDecor="underline"
-									>
-										Watch Video
+									<Link href={element.link}>
+										Watch Video{' '}
+										<ExternalLinkIcon mx="2px" />
 									</Link>
 								</Box>
 							</Box>
