@@ -19,7 +19,8 @@ export default function TopicsCards() {
 		<Box width="100%" display="flex" justifyContent="center">
 			<Box
 				style={{
-					background: 'rgba(255, 255, 255, 0.1)',
+					background:
+						'linear-gradient(320deg, rgba(255,255,255,0) 21%, rgba(255,255,255,0.3) 100%)',
 					borderRadius: '16px',
 					boxShadow: ' 0 4px 30px rgba(0, 0, 0, 0.1)',
 					backdropFilter: 'blur(3.5px)',
