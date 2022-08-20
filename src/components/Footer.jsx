@@ -42,7 +42,12 @@ export default function Footer() {
 							target="_blank"
 							rel="noreferrer"
 						>
-							<Image src={twitter} alt="twitter" />
+							<Image
+								src={twitter}
+								alt="twitter"
+								w="100%"
+								h="100%"
+							/>
 						</a>
 					</ListItem>
 					<ListItem mr={4} ml={4}>
@@ -51,7 +56,12 @@ export default function Footer() {
 							target="_blank"
 							rel="noreferrer"
 						>
-							<Image src={youtube} alt="youtube" />
+							<Image
+								src={youtube}
+								alt="youtube"
+								w="100%"
+								h="100%"
+							/>
 						</a>
 					</ListItem>
 					<ListItem mr={4} ml={4}>
@@ -60,7 +70,7 @@ export default function Footer() {
 							target="_blank"
 							rel="noreferrer"
 						>
-							<Image src={line} alt="line" />
+							<Image src={line} alt="line" w="100%" h="100%" />
 						</a>
 					</ListItem>
 					<ListItem mr={4} ml={4}>
@@ -69,7 +79,7 @@ export default function Footer() {
 							target="_blank"
 							rel="noreferrer"
 						>
-							<Image src={weibo} alt="wiebo" />
+							<Image src={weibo} alt="wiebo" w="100%" h="100%" />
 						</a>
 					</ListItem>
 				</UnorderedList>

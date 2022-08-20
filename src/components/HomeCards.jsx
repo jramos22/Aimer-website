@@ -46,6 +46,7 @@ export default function HomeCards() {
 									minH="380px"
 									h="100%"
 									objectFit="cover"
+									alt={element.name}
 								/>
 							</Box>
 							<Box
@@ -129,7 +130,9 @@ export default function HomeCards() {
 									}}
 									w="100%"
 									minH="380px"
+									h="100%"
 									objectFit="cover"
+									alt={element.name}
 								/>
 							</Box>
 						</Box>

@@ -1,18 +1,20 @@
 import { GET_HOMECARDS, NO_DATA } from '../types';
 //images
-import zankyosanka from '../img/zankyosanka-banner.jpg';
-import MiletxAimerxIkuta from '../img/aimer-milet-ikuta.jpg';
+import zankyosanka from '../img/zankyosanka-banner.webp';
+import MiletxAimerxIkuta from '../img/aimer-milet-ikuta.webp';
 import twitter from '../img/twitter.png';
 
 const initialState = {
 	cards: [
 		{
+			name: 'zankyosanka',
 			img: zankyosanka,
 			content:
 				"Aimer's new song 'Zankyou Sanka (Song of Reverberation),' the opening theme song of the anime Kimetsu no Yaiba: Yuukaku-hen, topped Oricon's weekly streaming chart for the sixth time since its digital release on December 6 last year. Between February 14 and 20, it was played 10,060,949 times and has been the third consecutive week that the song has remained at the top of the chart.",
 			link: 'https://www.youtube.com/watch?v=tLQLa6lM3Us',
 		},
 		{
+			name: 'Aimer X Milet X Ikuta',
 			img: MiletxAimerxIkuta,
 			content:
 				'Popular YouTube channel THE FIRST TAKE has released an announcement on their official Twitter account, featuring a never-before-seen collaboration between three famous Japanese artists: milet, Aimer, and Ikuta Lilas from YOASOBI. ',

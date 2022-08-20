@@ -69,13 +69,20 @@ export default function TopicsCards() {
 										justifyContent="center"
 										alignItems="center"
 									>
-										<Box w="20px">
+										<Box
+											w={{ base: '20px', '1md': '25px' }}
+										>
 											<Image
 												src={element.image}
 												width={{
 													base: '20px',
 													'1md': '25px',
 												}}
+												h={{
+													base: '20px',
+													'1md': '25px',
+												}}
+												alt="Twitter"
 											/>
 										</Box>
 									</Box>

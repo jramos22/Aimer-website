@@ -7,7 +7,7 @@ import CardCarrousel from './CardCarrousel';
 import MusicPlayerControlles from './PlayerControl';
 import CarrouseelContainer from './CarrouseelContainer';
 //chakra UI
-import { Box } from '@chakra-ui/react';
+import { Box, Spinner } from '@chakra-ui/react';
 
 export default function Carrouseel() {
 	// get state of redux
@@ -16,7 +16,7 @@ export default function Carrouseel() {
 	const [slides, setSlides] = useState([]);
 	//const to set the background-image
 	const [background, setBackground] = useState(
-		'https://imgix.cosmicjs.com/c1fc7e70-153a-11ed-b648-6d9b65eae0b9-1200x1200bf-60.jpg'
+		'https://imgix.cosmicjs.com/b1a18650-200d-11ed-a5bd-ef15a2e468ca-1200x1200bf-60.webp'
 	);
 	//const where I have the songs of each album
 	const [songs, setSongs] = useState([]);
@@ -83,7 +83,21 @@ export default function Carrouseel() {
 		}
 	}, [state, currentSongIndex]);
 	if (songs.length === 0) {
-		return <div>Loanding...</div>;
+		return (
+			<Box
+				display="flex"
+				justifyContent="center"
+				backgroundColor="rgb(0,0,0)"
+			>
+				<Spinner
+					thickness="4px"
+					speed="0.65s"
+					emptyColor="gray.200"
+					color="blue.500"
+					size="xl"
+				/>
+			</Box>
+		);
 	} else if (songs !== 0) {
 		return (
 			<Box

@@ -181,7 +181,12 @@ const MusicPlayerControlles = (props) => {
 				>
 					<Box>
 						<Button onClick={() => SkipSong(false)} alt="previous">
-							<Image src={prev} alt="previous" />
+							<Image
+								src={prev}
+								alt="previous"
+								w="21px"
+								h="17px"
+							/>
 						</Button>
 					</Box>
 					<Box>
@@ -192,12 +197,14 @@ const MusicPlayerControlles = (props) => {
 							<Image
 								src={props.isPlaying ? pause : play}
 								alt="play/pause"
+								w="21px"
+								h="17px"
 							/>
 						</Button>
 					</Box>
 					<Box>
 						<Button onClick={() => SkipSong()} alt="next">
-							<Image src={next} alt="next" />
+							<Image src={next} alt="next" w="21px" h="17px" />
 						</Button>
 					</Box>
 				</Box>

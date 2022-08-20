@@ -103,9 +103,16 @@ const ListOfSongs = (props) => {
 										<Image
 											src={props.isPlaying ? pause : play}
 											alt="play/pause"
+											w="21px"
+											h="17px"
 										/>
 									) : (
-										<Image src={play} alt="play/pause" />
+										<Image
+											src={play}
+											alt="play/pause"
+											w="21px"
+											h="17px"
+										/>
 									)}
 								</Button>
 							</ListItem>

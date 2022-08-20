@@ -18,9 +18,9 @@ export default function MediaContent() {
 				<Box display="flex" flexWrap="wrap" justifyContent="center">
 					<AspectRatio
 						m={4}
-						maxW="445px"
+						maxW={{ base: '328px', '2md': '445px' }}
 						ratio={16 / 9}
-						width={{ base: '328px', '2md': '445px' }}
+						width={{ base: '328px', lg: '445px' }}
 					>
 						<iframe
 							src="https://www.youtube.com/embed/sMy1lK1L67g"
@@ -30,9 +30,9 @@ export default function MediaContent() {
 					</AspectRatio>
 					<AspectRatio
 						m={4}
-						maxW="445px"
+						maxW={{ base: '328px', '2md': '445px' }}
 						ratio={16 / 9}
-						width={{ base: '328px', '2md': '445px' }}
+						width={{ base: '328px', lg: '445px' }}
 						display={{ base: 'none', '2md': 'block' }}
 					>
 						<iframe
@@ -43,9 +43,9 @@ export default function MediaContent() {
 					</AspectRatio>
 					<AspectRatio
 						m={4}
-						maxW="445px"
+						maxW={{ base: '328px', '2md': '445px' }}
 						ratio={16 / 9}
-						width={{ base: '328px', '2md': '445px' }}
+						width={{ base: '328px', lg: '445px' }}
 					>
 						<iframe
 							src="https://www.youtube.com/embed/2vTjUnQrGP0"
@@ -55,9 +55,9 @@ export default function MediaContent() {
 					</AspectRatio>
 					<AspectRatio
 						m={4}
-						maxW="445px"
+						maxW={{ base: '328px', '2md': '445px' }}
 						ratio={16 / 9}
-						width={{ base: '328px', '2md': '445px' }}
+						width={{ base: '328px', lg: '445px' }}
 						display={{ base: 'none', '2md': 'block' }}
 					>
 						<iframe
@@ -68,9 +68,9 @@ export default function MediaContent() {
 					</AspectRatio>
 					<AspectRatio
 						m={4}
-						maxW="445px"
+						maxW={{ base: '328px', '2md': '445px' }}
 						ratio={16 / 9}
-						width={{ base: '328px', '2md': '445px' }}
+						width={{ base: '328px', lg: '445px' }}
 						display={{ base: 'none', '2md': 'block' }}
 					>
 						<iframe
@@ -81,9 +81,9 @@ export default function MediaContent() {
 					</AspectRatio>
 					<AspectRatio
 						m={4}
-						maxW="445px"
+						maxW={{ base: '328px', '2md': '445px' }}
 						ratio={16 / 9}
-						width={{ base: '328px', '2md': '445px' }}
+						width={{ base: '328px', lg: '445px' }}
 					>
 						<iframe
 							src="https://www.youtube.com/embed/ngrBbLTvjN4"
@@ -93,9 +93,9 @@ export default function MediaContent() {
 					</AspectRatio>
 					<AspectRatio
 						m={4}
-						maxW="445px"
+						maxW={{ base: '328px', '2md': '445px' }}
 						ratio={16 / 9}
-						width={{ base: '328px', '2md': '445px' }}
+						width={{ base: '328px', lg: '445px' }}
 					>
 						<iframe
 							src="https://www.youtube.com/embed/QORbTrXHpsA"
@@ -105,9 +105,9 @@ export default function MediaContent() {
 					</AspectRatio>
 					<AspectRatio
 						m={4}
-						maxW="445px"
+						maxW={{ base: '328px', '2md': '445px' }}
 						ratio={16 / 9}
-						width={{ base: '328px', '2md': '445px' }}
+						width={{ base: '328px', lg: '445px' }}
 						display={{ base: 'none', '2md': 'block' }}
 					>
 						<iframe
@@ -118,9 +118,9 @@ export default function MediaContent() {
 					</AspectRatio>
 					<AspectRatio
 						m={4}
-						maxW="445px"
+						maxW={{ base: '328px', '2md': '445px' }}
 						ratio={16 / 9}
-						width={{ base: '328px', '2md': '445px' }}
+						width={{ base: '328px', lg: '445px' }}
 					>
 						<iframe
 							src="https://www.youtube.com/embed/tLQLa6lM3Us"
