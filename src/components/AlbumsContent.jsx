@@ -1,5 +1,7 @@
 //react
 import React from 'react';
+//react-router
+import { Link as ReachLink } from 'react-router-dom';
 // Redux
 import { useSelector } from 'react-redux';
 // chakra UI
@@ -93,7 +95,12 @@ export default function AlbumsContent() {
 										</Box>
 									</Box>
 									<Box>
-										<Link>Detail Album</Link>
+										<Link
+											as={ReachLink}
+											to={'/albums/' + element.id}
+										>
+											Detail Album
+										</Link>
 									</Box>
 								</ListItem>
 							);

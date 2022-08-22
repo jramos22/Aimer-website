@@ -18,7 +18,6 @@ export default function NewsContent() {
 	const [show, setShow] = React.useState(false);
 	const handleToggle = () => setShow(!show);
 	const news = useSelector((news) => news.homeCards.News);
-	console.log(news);
 	return (
 		<Box display="flex" justifyContent="center" w="100%">
 			<Box maxW="919px">

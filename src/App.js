@@ -21,6 +21,7 @@ import Home from './pages/Home';
 import Media from './pages/Media';
 import News from './pages/News';
 import Shop from './pages/Shop';
+import DetailAlbum from './pages/DetailAlbum';
 
 function App() {
 	//dispatch intial state
@@ -41,6 +42,7 @@ function App() {
 					<Route path="/shop" element={<Shop />} />
 					<Route path="/bio" element={<Biography />} />
 					<Route path="/albums" element={<Albums />} />
+					<Route path="/albums/:id" element={<DetailAlbum />} />
 					<Route path="/media" element={<Media />} />
 					<Route path="/news" element={<News />} />
 					<Route path="/home" element={<Home />} />
