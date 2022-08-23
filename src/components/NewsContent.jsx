@@ -51,7 +51,12 @@ export default function NewsContent() {
 									>
 										{element.date}
 									</Text>
-									<Text color="brand.Grey" mt={2} mb={2}>
+									<Text
+										color="brand.Grey"
+										mt={2}
+										mb={2}
+										fontWeight="300"
+									>
 										{element.content}
 									</Text>
 									<Divider />

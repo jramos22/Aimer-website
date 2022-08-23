@@ -83,7 +83,9 @@ export default function DetailAlbumContent({ album }) {
 									}}
 									textAlign="center"
 								>
-									<Text>{element.metadata.name}</Text>
+									<Text fontWeight="300">
+										{element.metadata.name}
+									</Text>
 									<Divider />
 								</ListItem>
 							);
