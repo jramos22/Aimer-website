@@ -39,6 +39,9 @@ export default function Header() {
 			bg="brand.header"
 			h={{ base: '75px', lg: '221' }}
 			flexDirection={{ lg: 'column' }}
+			position="sticky"
+			top="0"
+			zIndex={1}
 		>
 			<Box
 				mt={{ base: 4, lg: 4 }}
