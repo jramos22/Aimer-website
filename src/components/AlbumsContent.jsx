@@ -91,6 +91,7 @@ export default function AlbumsContent() {
 												w="100%"
 												h="100%"
 												objectFit="cover"
+												borderRadius="16px"
 											/>
 										</Box>
 									</Box>
