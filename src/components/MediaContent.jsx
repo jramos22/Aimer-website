@@ -1,7 +1,7 @@
 //react
 import React from 'react';
 //chakra UI
-import { Box, Heading, AspectRatio, Button, Link } from '@chakra-ui/react';
+import { Box, Heading, AspectRatio, Link } from '@chakra-ui/react';
 import { ExternalLinkIcon } from '@chakra-ui/icons';
 
 export default function MediaContent() {
