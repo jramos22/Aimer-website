@@ -8,12 +8,12 @@ import { useSelector } from 'react-redux';
 import {
 	Box,
 	UnorderedList,
-	ListItem,
 	Heading,
 	Text,
 	Image,
-	Link,
 	Spinner,
+	LinkBox,
+	LinkOverlay,
 } from '@chakra-ui/react';
 
 export default function AlbumsContent() {
@@ -53,7 +53,8 @@ export default function AlbumsContent() {
 					>
 						{Albums.objects.map((element, index) => {
 							return (
-								<ListItem
+								<LinkBox
+									as="li"
 									key={index}
 									w="326px"
 									h="331px"
@@ -96,14 +97,15 @@ export default function AlbumsContent() {
 										</Box>
 									</Box>
 									<Box>
-										<Link
+										<LinkOverlay
 											as={ReachLink}
 											to={'/albums/' + element.id}
+											textDecoration="underline"
 										>
 											Detail Album
-										</Link>
+										</LinkOverlay>
 									</Box>
-								</ListItem>
+								</LinkBox>
 							);
 						})}
 					</UnorderedList>
