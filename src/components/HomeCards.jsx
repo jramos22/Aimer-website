@@ -43,7 +43,7 @@ export default function HomeCards() {
 										'1md': '20px 0px 0px 20px',
 									}}
 									w="100%"
-									minH="380px"
+									minH={{ base: '280px', '1md': '380px' }}
 									h="100%"
 									objectFit="cover"
 									alt={element.name}
@@ -129,7 +129,7 @@ export default function HomeCards() {
 										'1md': '0px 20px 20px 0px',
 									}}
 									w="100%"
-									minH="380px"
+									minH={{ base: '280px', '1md': '380px' }}
 									h="100%"
 									objectFit="cover"
 									alt={element.name}

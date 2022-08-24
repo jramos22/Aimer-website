@@ -178,22 +178,12 @@ export default function Header() {
 					</ListItem>
 					<ListItem mr={4}>
 						<NavLink
-							to="/shop"
+							to="/products"
 							style={({ isActive }) =>
 								isActive ? activeStyle : undefined
 							}
 						>
-							SHOP
-						</NavLink>
-					</ListItem>
-					<ListItem mr={4}>
-						<NavLink
-							to="/dowload"
-							style={({ isActive }) =>
-								isActive ? activeStyle : undefined
-							}
-						>
-							DOWLOAD
+							PRODUCTS
 						</NavLink>
 					</ListItem>
 				</UnorderedList>
@@ -295,24 +285,13 @@ export default function Header() {
 							</ListItem>
 							<ListItem mr={4} mb={4}>
 								<NavLink
-									to="/shop"
+									to="/products"
 									style={({ isActive }) =>
 										isActive ? activeStyle : undefined
 									}
 									onClick={onClose}
 								>
-									SHOP
-								</NavLink>
-							</ListItem>
-							<ListItem mr={4} mb={4}>
-								<NavLink
-									to="/dowload"
-									style={({ isActive }) =>
-										isActive ? activeStyle : undefined
-									}
-									onClick={onClose}
-								>
-									DOWLOAD
+									PRODUCTS
 								</NavLink>
 							</ListItem>
 						</UnorderedList>

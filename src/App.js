@@ -16,11 +16,10 @@ import Footer from './components/Footer';
 //Pages
 import Albums from './pages/Albums';
 import Biography from './pages/Bio';
-import Dowload from './pages/Dowload';
 import Home from './pages/Home';
 import Media from './pages/Media';
 import News from './pages/News';
-import Shop from './pages/Shop';
+import Products from './pages/products';
 import DetailAlbum from './pages/DetailAlbum';
 
 function App() {
@@ -38,8 +37,7 @@ function App() {
 			<Router>
 				<Header />
 				<Routes>
-					<Route path="/dowload" element={<Dowload />} />
-					<Route path="/shop" element={<Shop />} />
+					<Route path="/products" element={<Products />} />
 					<Route path="/bio" element={<Biography />} />
 					<Route path="/albums" element={<Albums />} />
 					<Route path="/albums/:id" element={<DetailAlbum />} />
