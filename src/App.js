@@ -21,6 +21,9 @@ import Media from './pages/Media';
 import News from './pages/News';
 import Products from './pages/products';
 import DetailAlbum from './pages/DetailAlbum';
+//fonts
+import '@fontsource/aileron';
+import '@fontsource/poppins';
 
 function App() {
 	//dispatch intial state
