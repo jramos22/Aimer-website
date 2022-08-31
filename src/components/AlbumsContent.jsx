@@ -40,7 +40,7 @@ export default function AlbumsContent() {
 						<Heading
 							display={{ lg: 'none' }}
 							textAlign="center"
-							fontFamily="popings"
+							fontFamily="poppins"
 						>
 							ALBUMS
 						</Heading>
@@ -77,7 +77,7 @@ export default function AlbumsContent() {
 									<Box>
 										<Heading
 											fontSize="1.5rem"
-											fontFamily="popings"
+											fontFamily="poppins"
 										>
 											{element.metadata.name}
 										</Heading>

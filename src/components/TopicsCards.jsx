@@ -40,7 +40,7 @@ export default function TopicsCards() {
 				}}
 			>
 				<Box>
-					<Heading fontSize="1.875rem" fontFamily="popings">
+					<Heading fontSize="1.875rem" fontFamily="poppins">
 						Topics
 					</Heading>
 				</Box>

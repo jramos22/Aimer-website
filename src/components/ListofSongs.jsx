@@ -77,7 +77,7 @@ const ListOfSongs = (props) => {
 								>
 									<Heading
 										textAlign="center"
-										fontFamily="popings"
+										fontFamily="poppins"
 										fontSize="1.25rem"
 									>
 										{element.metadata.name}
@@ -91,7 +91,7 @@ const ListOfSongs = (props) => {
 									<Heading
 										margin={2}
 										textAlign="center"
-										fontFamily="popings"
+										fontFamily="poppins"
 										fontSize="1.25rem"
 									>
 										{element.metadata.name}

@@ -33,7 +33,7 @@ export default function DetailAlbumContent({ album }) {
 				color="brand.White"
 			>
 				<Box>
-					<Heading fontSize="1.5rem" fontFamily="popings">
+					<Heading fontSize="1.5rem" fontFamily="poppins">
 						{album.metadata.name}
 					</Heading>
 				</Box>
@@ -88,7 +88,7 @@ export default function DetailAlbumContent({ album }) {
 								>
 									<Text
 										fontWeight="bold"
-										fontFamily="popings"
+										fontFamily="poppins"
 										fontSize="1.06rem"
 									>
 										{element.metadata.name}

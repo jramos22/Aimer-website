@@ -116,7 +116,7 @@ const MusicPlayerControlles = (props) => {
 						<Heading
 							color="brand.White"
 							fontSize="1.50rem"
-							fontFamily="popings"
+							fontFamily="poppins"
 							letterSpacing={1}
 						>
 							{props.songs[props.currentSongIndex].metadata.name}
@@ -127,7 +127,7 @@ const MusicPlayerControlles = (props) => {
 							style={{
 								color: 'white',
 								fontSize: '1.50rem',
-								fontFamily: 'popings',
+								fontFamily: 'poppins',
 								lineHeight: '1',
 								fontWeight: 'bold',
 							}}
@@ -153,7 +153,7 @@ const MusicPlayerControlles = (props) => {
 						color="brand.White"
 						fontSize="1.50rem"
 						textAlign="center"
-						fontFamily="popings"
+						fontFamily="poppins"
 					>
 						{props.songs[props.currentSongIndex].metadata.name}
 					</Heading>

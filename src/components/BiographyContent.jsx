@@ -65,7 +65,7 @@ export default function BiographyContent() {
 						fontSize="1.5rem"
 						display={{ lg: 'none' }}
 						textAlign="center"
-						fontFamily="popings"
+						fontFamily="poppins"
 					>
 						BIOGRAPHY
 					</Heading>
@@ -220,7 +220,7 @@ export default function BiographyContent() {
 									fontSize="1.50rem"
 									textAlign="center"
 									mb={4}
-									fontFamily="popings"
+									fontFamily="poppins"
 									letterSpacing={2}
 								>
 									Aimer

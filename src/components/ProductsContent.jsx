@@ -34,7 +34,7 @@ export default function ProductsContent() {
 					textAlign="center"
 					m={8}
 					color="brand.White"
-					fontFamily="popings"
+					fontFamily="poppins"
 				>
 					PRODUCTS
 				</Heading>

@@ -87,7 +87,7 @@ function CarrouseelContainer(props) {
 					<Heading
 						fontSize="1.50rem"
 						letterSpacing={1}
-						fontFamily="popings"
+						fontFamily="poppins"
 					>
 						{props.slides[goToSlide].content.props.name}
 					</Heading>
