@@ -40,7 +40,9 @@ export default function TopicsCards() {
 				}}
 			>
 				<Box>
-					<Heading fontSize="1.875rem">Topics</Heading>
+					<Heading fontSize="1.875rem" fontFamily="popings">
+						Topics
+					</Heading>
 				</Box>
 				<Box>
 					<UnorderedList listStyleType="none" m={0} mt={4}>

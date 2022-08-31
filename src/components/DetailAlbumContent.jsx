@@ -33,7 +33,9 @@ export default function DetailAlbumContent({ album }) {
 				color="brand.White"
 			>
 				<Box>
-					<Heading fontSize="1.5rem">{album.metadata.name}</Heading>
+					<Heading fontSize="1.5rem" fontFamily="popings">
+						{album.metadata.name}
+					</Heading>
 				</Box>
 				<Box>
 					<Text>{album.metadata.date}</Text>
@@ -68,9 +70,9 @@ export default function DetailAlbumContent({ album }) {
 					color="brand.White"
 					p={8}
 				>
-					<Heading textAlign="center" mb={4}>
+					<Text textAlign="center" mb={4}>
 						Songs
-					</Heading>
+					</Text>
 					<OrderedList display="flex" flexWrap="wrap" m={0} w="100%">
 						{album.metadata.songs[0].song.map((element, index) => {
 							return (
@@ -84,7 +86,11 @@ export default function DetailAlbumContent({ album }) {
 									}}
 									textAlign="center"
 								>
-									<Text fontWeight="300">
+									<Text
+										fontWeight="bold"
+										fontFamily="popings"
+										fontSize="1.06rem"
+									>
 										{element.metadata.name}
 									</Text>
 									<Divider />

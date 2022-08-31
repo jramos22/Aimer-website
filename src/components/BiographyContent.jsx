@@ -65,6 +65,7 @@ export default function BiographyContent() {
 						fontSize="1.5rem"
 						display={{ lg: 'none' }}
 						textAlign="center"
+						fontFamily="popings"
 					>
 						BIOGRAPHY
 					</Heading>
@@ -216,9 +217,11 @@ export default function BiographyContent() {
 						<Box maxW="1014px">
 							<Box>
 								<Heading
-									fontSize="1.25rem"
+									fontSize="1.50rem"
 									textAlign="center"
 									mb={4}
+									fontFamily="popings"
+									letterSpacing={2}
 								>
 									Aimer
 								</Heading>

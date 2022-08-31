@@ -37,7 +37,11 @@ export default function AlbumsContent() {
 			<Box m={4} display="flex" justifyContent="center">
 				<Box color="brand.White">
 					<Box>
-						<Heading display={{ lg: 'none' }} textAlign="center">
+						<Heading
+							display={{ lg: 'none' }}
+							textAlign="center"
+							fontFamily="popings"
+						>
 							ALBUMS
 						</Heading>
 					</Box>
@@ -71,7 +75,10 @@ export default function AlbumsContent() {
 									m={2}
 								>
 									<Box>
-										<Heading fontSize="1.5rem">
+										<Heading
+											fontSize="1.5rem"
+											fontFamily="popings"
+										>
 											{element.metadata.name}
 										</Heading>
 									</Box>

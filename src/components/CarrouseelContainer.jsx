@@ -57,9 +57,9 @@ function CarrouseelContainer(props) {
 					borderRadius="20px"
 					flexWrap="wrap"
 				>
-					<Heading width="100%" textAlign="center" fontSize="1.5rem">
+					<Text width="100%" textAlign="center" fontSize="1rem">
 						Albums
-					</Heading>
+					</Text>
 					<Button
 						onClick={() => {
 							//control the slide to go
@@ -84,9 +84,13 @@ function CarrouseelContainer(props) {
 					>
 						<ArrowLeftIcon color="Black" alt="Arrow Left" />
 					</Button>
-					<Text fontSize="1rem">
+					<Heading
+						fontSize="1.50rem"
+						letterSpacing={1}
+						fontFamily="popings"
+					>
 						{props.slides[goToSlide].content.props.name}
-					</Text>
+					</Heading>
 					<Button
 						onClick={() => {
 							//control the slide to go

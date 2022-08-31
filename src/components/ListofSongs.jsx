@@ -31,9 +31,9 @@ const ListOfSongs = (props) => {
 			flexDirection="column"
 		>
 			<Box>
-				<Heading fontSize="1.5rem" color="brand.White">
+				<Text fontSize="1rem" color="brand.White">
 					Songs
-				</Heading>
+				</Text>
 			</Box>
 			<Collapse
 				startingHeight="376px"
@@ -52,7 +52,7 @@ const ListOfSongs = (props) => {
 								mb={4}
 								backgroundColor="brand.White"
 								borderRadius="24px"
-								h="56px"
+								h="58px"
 								onChange={() => {
 									props.setIsPlaying(!props.isPlaying);
 									console.log(props.isPlaying);
@@ -75,18 +75,27 @@ const ListOfSongs = (props) => {
 									height="24px"
 									margin={2}
 								>
-									<Text textAlign="center">
+									<Heading
+										textAlign="center"
+										fontFamily="popings"
+										fontSize="1.25rem"
+									>
 										{element.metadata.name}
-									</Text>
+									</Heading>
 								</Box>
 								{/* descktop */}
 								<Box
 									display={{ base: 'none', '2md': 'block' }}
 									width="60%"
 								>
-									<Text margin={2} textAlign="center">
+									<Heading
+										margin={2}
+										textAlign="center"
+										fontFamily="popings"
+										fontSize="1.25rem"
+									>
 										{element.metadata.name}
-									</Text>
+									</Heading>
 								</Box>
 								<Button
 									variant="outline"
@@ -126,6 +135,7 @@ const ListOfSongs = (props) => {
 				mt="1rem"
 				mb={6}
 				alt="show more"
+				fontWeight="regular"
 			>
 				Show {show ? 'Less' : 'More'}
 			</Button>

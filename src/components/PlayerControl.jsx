@@ -108,17 +108,30 @@ const MusicPlayerControlles = (props) => {
 			>
 				{/* mobile */}
 				<Box mb={4} display={{ '2md': 'none' }} textAlign="center">
-					<Heading color="brand.White" fontSize="1.5rem">
+					<Text color="brand.White" fontSize="1rem">
 						Current Song
-					</Heading>
+					</Text>
 					{props.songs[props.currentSongIndex].metadata.name.length <=
-					25 ? (
-						<Text color="brand.White" fontSize="1rem">
+					15 ? (
+						<Heading
+							color="brand.White"
+							fontSize="1.50rem"
+							fontFamily="popings"
+							letterSpacing={1}
+						>
 							{props.songs[props.currentSongIndex].metadata.name}
-						</Text>
+						</Heading>
 					) : (
 						// eslint-disable-next-line
-						<marquee style={{ color: 'white', fontSize: '1rem' }}>
+						<marquee
+							style={{
+								color: 'white',
+								fontSize: '1.50rem',
+								fontFamily: 'popings',
+								lineHeight: '1',
+								fontWeight: 'bold',
+							}}
+						>
 							{props.songs[props.currentSongIndex].metadata.name}
 						</marquee>
 					)}
@@ -129,20 +142,21 @@ const MusicPlayerControlles = (props) => {
 					display={{ base: 'none', '2md': 'block' }}
 					width="100%"
 				>
-					<Heading
-						color="brand.White"
-						fontSize="1.5rem"
-						textAlign="center"
-					>
-						Current Song
-					</Heading>
 					<Text
 						color="brand.White"
 						fontSize="1rem"
 						textAlign="center"
 					>
-						{props.songs[props.currentSongIndex].metadata.name}
+						Current Song
 					</Text>
+					<Heading
+						color="brand.White"
+						fontSize="1.50rem"
+						textAlign="center"
+						fontFamily="popings"
+					>
+						{props.songs[props.currentSongIndex].metadata.name}
+					</Heading>
 				</Box>
 				<Slider
 					aria-label="slider-ex-4"

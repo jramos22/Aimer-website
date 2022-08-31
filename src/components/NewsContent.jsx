@@ -25,6 +25,8 @@ export default function NewsContent() {
 					textAlign="center"
 					color="brand.White"
 					display={{ lg: 'none' }}
+					fontFamily="popings"
+					fontStyle="normal"
 				>
 					NEWS
 				</Heading>
@@ -40,6 +42,7 @@ export default function NewsContent() {
 									<Heading
 										fontSize="1.25rem"
 										color="brand.White"
+										fontFamily="popings"
 									>
 										{element.title}
 									</Heading>

@@ -12,6 +12,7 @@ export default function MediaContent() {
 					color="brand.White"
 					display={{ lg: 'none' }}
 					textAlign="center"
+					fontFamily="popings"
 				>
 					MEDIA
 				</Heading>
