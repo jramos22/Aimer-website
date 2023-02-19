@@ -88,6 +88,8 @@ function CarrouseelContainer(props) {
 						fontSize="1.50rem"
 						letterSpacing={1}
 						fontFamily="poppins"
+						maxW="179px"
+						textAlign={"center"}
 					>
 						{props.slides[goToSlide].content.props.name}
 					</Heading>
